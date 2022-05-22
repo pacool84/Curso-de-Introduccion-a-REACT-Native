@@ -2,8 +2,14 @@ import React from "react";
 import { Text } from "react-native";
 
 function Saludar(props) {
-  console.log(props.nombre);
-  return <Text>Hola {props.nombre}</Text>;
+  const { nombre, apellido } = props;
+  console.log(nombre, apellido);
+
+  return (
+    <Text>
+      Hola {nombre} {apellido}
+    </Text>
+  );
 }
 
 export default Saludar;

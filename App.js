@@ -6,9 +6,9 @@ export default function App() {
     <View style={styles.container}>
       <Text>Hello My new Friend REACT NATIVE</Text>
       <Text>😁 👍🏻</Text>
-      <Saludar nombre="Sebastian Lopez" />
-      <Saludar nombre="Brenda Rosales" />
-      <Saludar nombre="Francisco Lopez" />
+      <Saludar nombre="Sebastian" apellido="Lopez" />
+      <Saludar nombre="Brenda" apellido="Rosales" />
+      <Saludar nombre="Francisco" apellido="Lòpez" />
     </View>
   );
 }
