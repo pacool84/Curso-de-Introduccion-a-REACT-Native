@@ -1,16 +1,14 @@
-import { StyleSheet, Text, View } from "react-native";
-import Saludar from "./src/components/Saludar";
+import "react-native-gesture-handler";
+import React from "react";
+import { StyleSheet } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import NavigationStack from "./src/navigation/NavigationStack";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello My new Friend REACT NATIVE</Text>
-      <Text>😁 👍🏻</Text>
-      <Saludar />
-      <Saludar nombre="Sebastian" apellido="Lopez" />
-      <Saludar nombre="Brenda" apellido="Rosales" />
-      <Saludar nombre="Francisco" apellido="Lòpez" />
-    </View>
+    <NavigationContainer>
+      <NavigationStack />
+    </NavigationContainer>
   );
 }
 

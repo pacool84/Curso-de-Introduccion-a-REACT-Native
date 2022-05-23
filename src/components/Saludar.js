@@ -29,10 +29,10 @@ function Saludar(props) {
   );
 } */
 
-/* Saludar.defaultProps = {
+Saludar.defaultProps = {
   nombre: "Legendary",
   apellido: "Developer",
-}; */
+};
 
 Saludar.propTypes = {
   nombre: PropTypes.string.isRequired,
